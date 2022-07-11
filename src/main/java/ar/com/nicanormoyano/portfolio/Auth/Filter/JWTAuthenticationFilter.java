@@ -82,7 +82,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                 .setClaims(claims)
                 .setSubject(username)
                 .signWith(SignatureAlgorithm.HS512,
-                        "AmLc0wi4y^wCZ+p5Q+Re~".getBytes())
+                        "Otra.Clave".getBytes())
                 .setIssuedAt(new Date())
                 //3600000 serian 1 hora
                 .setExpiration(new Date(System.currentTimeMillis() +
