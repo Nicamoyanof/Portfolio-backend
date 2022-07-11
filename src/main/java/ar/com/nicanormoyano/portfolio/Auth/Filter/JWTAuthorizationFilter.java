@@ -37,7 +37,7 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
         Claims token = null;
         try {
             token = Jwts.parser()
-                    .setSigningKey("AmLc0wi4y^wCZ+p5Q+Re~".getBytes())
+                    .setSigningKey("Clave.Secreta".getBytes())
                     .parseClaimsJws(header.replace("Bearer ", ""))
                     .getBody();
             validToken = true;
